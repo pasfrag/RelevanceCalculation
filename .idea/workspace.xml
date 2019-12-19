@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0669768-50a8-4cde-a3c1-556615e33aa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_chuusai_shapeless_2_11_2_3_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_fommil_netlib_core_1_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_rwl_jtransforms_2_4_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sf_opencsv_opencsv_2_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sourceforge_f2j_arpack_combined_all_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_graphx_2_11_2_4_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_mllib_2_11_2_4_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_mllib_local_2_11_2_4_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_streaming_2_11_2_4_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalanlp_breeze_2_11_0_13_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalanlp_breeze_macros_2_11_0_13_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_spire_math_spire_2_11_0_13_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_spire_math_spire_macros_2_11_0_13_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_machinist_2_11_0_6_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_macro_compat_2_11_1_1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/RelevanceCalculation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RelevanceCalculation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fellmarrow5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.11/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.11/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +118,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3153425125960" />
         <entry key="$PROJECT_DIR$/build.sbt" value="2567097834" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
       </map>
@@ -174,7 +147,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576704560788</updated>
       <workItem from="1576704562241" duration="2005000" />
-      <workItem from="1576712393755" duration="658000" />
+      <workItem from="1576712393755" duration="3002000" />
+      <workItem from="1576749565796" duration="4261000" />
     </task>
     <task id="LOCAL-00001" summary="data ignored">
       <created>1576712499506</created>
@@ -183,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576712499506</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ml added">
+      <created>1576713196611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576713196611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +175,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -202,16 +185,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="data ignored" />
-    <option name="LAST_COMMIT_MESSAGE" value="data ignored" />
+    <MESSAGE value="ml added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ml added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1576712499375">
+    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1576713196194">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576712499375" />
-    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576712502278">
+    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576713196194" />
+    <state width="978" height="175" key="GridCell.Tab.0.bottom" timestamp="1576756511429">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576712502278" />
+    <state width="978" height="175" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511429" />
+    <state width="978" height="175" key="GridCell.Tab.0.center" timestamp="1576756511429">
+      <screen x="1920" y="0" width="1024" height="768" />
+    </state>
+    <state width="978" height="175" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511429" />
+    <state width="978" height="175" key="GridCell.Tab.0.left" timestamp="1576756511428">
+      <screen x="1920" y="0" width="1024" height="768" />
+    </state>
+    <state width="978" height="175" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511428" />
+    <state width="978" height="175" key="GridCell.Tab.0.right" timestamp="1576756511429">
+      <screen x="1920" y="0" width="1024" height="768" />
+    </state>
+    <state width="978" height="175" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511429" />
+    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576713204974">
+      <screen x="1920" y="0" width="1024" height="768" />
+    </state>
+    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576713204974" />
+    <state x="2088" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576749578236">
+      <screen x="1920" y="0" width="1024" height="768" />
+    </state>
+    <state x="2088" y="224" key="com.intellij.ide.util.TipDialog/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576749578236" />
   </component>
 </project>
