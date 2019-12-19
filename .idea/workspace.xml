@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0669768-50a8-4cde-a3c1-556615e33aa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fellmarrow5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/fellmarrow5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/fellmarrow5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
     </list>
@@ -46,6 +46,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Paschalis Frangidis" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -148,7 +153,7 @@
       <updated>1576704560788</updated>
       <workItem from="1576704562241" duration="2005000" />
       <workItem from="1576712393755" duration="3002000" />
-      <workItem from="1576749565796" duration="4261000" />
+      <workItem from="1576749565796" duration="12584000" />
     </task>
     <task id="LOCAL-00001" summary="data ignored">
       <created>1576712499506</created>
@@ -164,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576713196611</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tokenization added">
+      <created>1576757088941</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576757088941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,33 +198,34 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="data ignored" />
     <MESSAGE value="ml added" />
-    <option name="LAST_COMMIT_MESSAGE" value="ml added" />
+    <MESSAGE value="Tokenization added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tokenization added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1576713196194">
+    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1576757088743">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576713196194" />
-    <state width="978" height="175" key="GridCell.Tab.0.bottom" timestamp="1576756511429">
+    <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576757088743" />
+    <state width="978" height="175" key="GridCell.Tab.0.bottom" timestamp="1576776220164">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state width="978" height="175" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511429" />
-    <state width="978" height="175" key="GridCell.Tab.0.center" timestamp="1576756511429">
+    <state width="978" height="175" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776220164" />
+    <state width="978" height="175" key="GridCell.Tab.0.center" timestamp="1576776220164">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state width="978" height="175" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511429" />
-    <state width="978" height="175" key="GridCell.Tab.0.left" timestamp="1576756511428">
+    <state width="978" height="175" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776220164" />
+    <state width="978" height="175" key="GridCell.Tab.0.left" timestamp="1576776220163">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state width="978" height="175" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511428" />
-    <state width="978" height="175" key="GridCell.Tab.0.right" timestamp="1576756511429">
+    <state width="978" height="175" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776220163" />
+    <state width="978" height="175" key="GridCell.Tab.0.right" timestamp="1576776220164">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state width="978" height="175" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576756511429" />
-    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576713204974">
+    <state width="978" height="175" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776220164" />
+    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576757092900">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
-    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576713204974" />
+    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576757092900" />
     <state x="2088" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576749578236">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>

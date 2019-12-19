@@ -1,5 +1,6 @@
+import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkContext
-import org.apache.spark.ml.feature.Tokenizer
+import org.apache.spark.ml.feature.{StopWordsRemover, Tokenizer}
 import org.apache.spark.sql.{Column, DataFrame, SQLContext, SparkSession}
 
 object main {
@@ -10,6 +11,7 @@ object main {
         val spark: SparkSession = SparkSession.builder().config("spark.master", "local[*]").getOrCreate()
         val sc: SparkContext = spark.sparkContext
         val sqlContext: SQLContext = spark.sqlContext
+        LogManager.getRootLogger.setLevel(Level.ERROR)
 
         // Reading the data
         val trainDF: DataFrame = spark.read.format("csv").option("header", "true").load("data/train.csv")
@@ -27,12 +29,31 @@ object main {
           .map(colName => new Column(colName)): _*
         )
 
+        //Removing stopwords from training data
+        val remover = new StopWordsRemover()
+        remover.setInputCol("title_tokenized").setOutputCol("title_filtered")
+        val semiFilteredTrainDF = remover.transform(removedTrainDF)
+        remover.setInputCol("search_tokenized").setOutputCol("search_filtered")
+        val filteredTrainDF = remover.transform(semiFilteredTrainDF)
+        val finalTrainDF = filteredTrainDF.select(filteredTrainDF.columns
+          .filter(colName => !Seq("title_tokenized", "search_tokenized").contains(colName))
+          .map(colName => new Column(colName)): _*
+        )
+
         // Tokenizing the description data
         tokenizer.setInputCol("product_description").setOutputCol("description_tokenized")
         val tokenizedDescriptionDF = tokenizer.transform(descDF)
         val removedDescriptionDF = tokenizedDescriptionDF.select(tokenizedDescriptionDF.columns
           .filter(colName => colName != "product_description")
           .map(colName => new Column(colName)): _*
+        )
+
+        // Removing stopwords from description data
+        remover.setInputCol("description_tokenized").setOutputCol("description_filtered")
+        val filteredDescriptionDF = remover.transform(removedDescriptionDF)
+        val finalDescriptionDF = filteredDescriptionDF.select(filteredDescriptionDF.columns
+            .filter(colName => colName != "description_tokenized")
+            .map(colName => new Column(colName)): _*
         )
 
         // Tokenizing the attribute data
@@ -45,7 +66,17 @@ object main {
           .filter(colName => !columnsToRemove1.contains(colName))
           .map(colName => new Column(colName)): _*
         )
-        removedAttributeDF.printSchema()
+
+        // Removing stopwords from attribute data
+        remover.setInputCol("name_tokenized").setOutputCol("name_filtered")
+        val semiFilteredAttributeDF = remover.transform(removedAttributeDF)
+        remover.setInputCol("value_tokenized").setOutputCol("value_filtered")
+        val filteredAttributeDF = remover.transform(semiFilteredAttributeDF)
+        val finalAttributeDF = filteredAttributeDF.select(filteredAttributeDF.columns
+          .filter(colName => !Seq("name_tokenized", "value_tokenized").contains(colName))
+          .map(colName => new Column(colName)): _*
+        )
+        finalAttributeDF.take(10).foreach(x => print(x))
 
 //        trainDF.take(20).foreach(x => print(x))
 //        descDF.take(20).foreach(x => print(x))
