@@ -1,6 +1,6 @@
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkContext
-import org.apache.spark.ml.feature.{StopWordsRemover, Tokenizer}
+import org.apache.spark.ml.feature.{HashingTF, StopWordsRemover, Tokenizer}
 import org.apache.spark.sql.{Column, DataFrame, SQLContext, SparkSession}
 
 object main {
@@ -56,6 +56,12 @@ object main {
             .map(colName => new Column(colName)): _*
         )
 
+        // TF-ing description data
+        val hashingTF = new HashingTF()
+        hashingTF.setInputCol("description_filtered").setOutputCol("description_features").setNumFeatures(10000)
+        val featuresDescriptionDF = hashingTF.transform(finalDescriptionDF)
+//        featuresDescriptionDF.take(10).foreach(x => print(x))
+
         // Tokenizing the attribute data
         tokenizer.setInputCol("name").setOutputCol("name_tokenized")
         val semiTokenizedAttributeDF = tokenizer.transform(attrDF)
@@ -76,7 +82,6 @@ object main {
           .filter(colName => !Seq("name_tokenized", "value_tokenized").contains(colName))
           .map(colName => new Column(colName)): _*
         )
-        finalAttributeDF.take(10).foreach(x => print(x))
 
 //        trainDF.take(20).foreach(x => print(x))
 //        descDF.take(20).foreach(x => print(x))
