@@ -1,6 +1,6 @@
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkContext
-import org.apache.spark.ml.feature.{HashingTF, StopWordsRemover, Tokenizer}
+import org.apache.spark.ml.feature.{HashingTF, IDF, StopWordsRemover, Tokenizer, Word2Vec}
 import org.apache.spark.sql.{Column, DataFrame, SQLContext, SparkSession}
 
 object main {
@@ -18,6 +18,8 @@ object main {
         val descDF: DataFrame = spark.read.format("csv").option("header", "true").load("data/product_descriptions.csv")
         val attrDF: DataFrame = spark.read.format("csv").option("header", "true").load("data/attributes.csv")
 
+
+//      -----------------------------Training Data Preprocess-----------------------------------------------
         // Tokenizing the training data
         val tokenizer = new Tokenizer().setInputCol("product_title").setOutputCol("title_tokenized")
         val semiTokenizedTrainDF = tokenizer.transform(trainDF)
@@ -40,6 +42,47 @@ object main {
           .map(colName => new Column(colName)): _*
         )
 
+        //TODO 2)Lemmatization to training data
+
+        // TF-ing training data
+        val hashingTF = new HashingTF()
+        hashingTF.setInputCol("title_filtered").setOutputCol("title_features").setNumFeatures(10000)
+        val semiFeaturesTrainDF = hashingTF.transform(finalTrainDF)
+        hashingTF.setInputCol("search_filtered").setOutputCol("search_features").setNumFeatures(10000)
+        val featuresTrainDF = hashingTF.transform(semiFeaturesTrainDF)
+
+        // TF-IDF training data
+        val idf = new IDF()
+        idf.setInputCol("title_features").setOutputCol("title")
+        val semiTrainIDFModel = idf.fit(featuresTrainDF)
+        val semiRescaledTRAINDF = semiTrainIDFModel.transform(featuresTrainDF)
+        idf.setInputCol("search_features").setOutputCol("search")
+        val trainIDFModel = idf.fit(semiRescaledTRAINDF)
+        val rescaledTrainDF = trainIDFModel.transform(semiRescaledTRAINDF)
+        val trainTFIDF = rescaledTrainDF.select(rescaledTrainDF.columns
+          .filter(colName => !Seq("title_filtered", "title_features", "search_filtered", "search_features").contains(colName))
+          .map(colName => new Column(colName)): _*
+        )
+//        trainTFIDF.printSchema()
+//        trainTFIDF.take(10).foreach(x => print(x))
+
+        // Word2Vec to training data
+        val word2Vec = new Word2Vec()
+        word2Vec.setInputCol("title_filtered").setOutputCol("title").setMinCount(0)//.setVectorSize(50)
+        val semiTrainVecModel = word2Vec.fit(finalTrainDF)
+        val semiVecTrainDF = semiTrainVecModel.transform(finalTrainDF)
+        word2Vec.setInputCol("search_filtered").setOutputCol("search").setMinCount(0)//.setVectorSize(50)
+        val trainVecModel = word2Vec.fit(semiVecTrainDF)
+        val vecTrainDF = trainVecModel.transform(semiVecTrainDF)
+        val trainW2VDF = vecTrainDF.select(vecTrainDF.columns
+          .filter(colName => !Seq("title_filtered", "search_filtered").contains(colName))
+          .map(colName => new Column(colName)): _*
+        )
+//        trainW2VDF.printSchema()
+//        trainW2VDF.take(10).foreach(x => print(x))
+
+
+//      -----------------------------Description Data Preprocess-----------------------------------------------
         // Tokenizing the description data
         tokenizer.setInputCol("product_description").setOutputCol("description_tokenized")
         val tokenizedDescriptionDF = tokenizer.transform(descDF)
@@ -56,12 +99,36 @@ object main {
             .map(colName => new Column(colName)): _*
         )
 
+        //TODO 3)Lemmatization to description data
+
         // TF-ing description data
-        val hashingTF = new HashingTF()
         hashingTF.setInputCol("description_filtered").setOutputCol("description_features").setNumFeatures(10000)
         val featuresDescriptionDF = hashingTF.transform(finalDescriptionDF)
-//        featuresDescriptionDF.take(10).foreach(x => print(x))
 
+        // TF-IDF description data
+        idf.setInputCol("description_features").setOutputCol("description")
+        val descriptionIDFModel = idf.fit(featuresDescriptionDF)
+        val rescaledDescriptionDF = descriptionIDFModel.transform(featuresDescriptionDF)
+        val descriptionTFIDF = rescaledDescriptionDF.select(rescaledDescriptionDF.columns
+          .filter(colName => !Seq("description_filtered", "description_features").contains(colName))
+          .map(colName => new Column(colName)): _*
+        )
+//        descriptionTFIDF.printSchema()
+//        descriptionTFIDF.take(10).foreach(x => print(x))
+
+        // Word2Vec to description data
+        word2Vec.setInputCol("description_filtered").setOutputCol("description").setMinCount(0).setVectorSize(50)
+        val descVecModel = word2Vec.fit(finalDescriptionDF)
+        val vecDescDF = descVecModel.transform(finalDescriptionDF)
+        val descriptionW2VDF = vecDescDF.select(vecDescDF.columns
+          .filter(colName => !Seq("description_filtered").contains(colName))
+          .map(colName => new Column(colName)): _*
+        )
+        descriptionW2VDF.printSchema()
+        descriptionW2VDF.take(10).foreach(x => print(x))
+
+
+//      -----------------------------Attribute Data Preprocess-----------------------------------------------
         // Tokenizing the attribute data
         tokenizer.setInputCol("name").setOutputCol("name_tokenized")
         val semiTokenizedAttributeDF = tokenizer.transform(attrDF)
@@ -83,10 +150,42 @@ object main {
           .map(colName => new Column(colName)): _*
         )
 
+        //TODO 4)Lemmatization to attribute data
+
+        // TF-ing attribute data
+        hashingTF.setInputCol("name_filtered").setOutputCol("name_features").setNumFeatures(10000)
+        val semiFeaturesAttributeDF = hashingTF.transform(finalAttributeDF)
+        hashingTF.setInputCol("value_filtered").setOutputCol("value_features").setNumFeatures(10000)
+        val featuresAttributeDF = hashingTF.transform(semiFeaturesAttributeDF)
+
+        //TODO 1)Make this shit work!!!
+
+        // TF-IDF attribute data
+//        idf.setInputCol("name_features").setOutputCol("name")
+//        val semiAttributeIDFModel = idf.fit(featuresAttributeDF)
+//        val semiRescaledAttributeIDF = semiAttributeIDFModel.transform(featuresAttributeDF)
+//        idf.setInputCol("value_features").setOutputCol("value")
+//        val attributeIDFModel = idf.fit(semiRescaledAttributeIDF)
+//        val rescaledAttributeDF = attributeIDFModel.transform(semiRescaledAttributeIDF)
+
+//        idf.setInputCol("name_features").setOutputCol("name")
+//        val semiAttributeIDFModel = idf.fit(featuresAttributeDF)
+//        val semiRescaledAttributeDF = semiAttributeIDFModel.transform(featuresAttributeDF)
+//        idf.setInputCol("value_features").setOutputCol("value")
+//        val attributeIDFModel = idf.fit(semiRescaledAttributeDF)
+//        val rescaledAttributeDF = attributeIDFModel.transform(semiRescaledAttributeDF)
+//        val attributeTFIDF = rescaledAttributeDF.select(rescaledAttributeDF.columns
+//          .filter(colName => !Seq("name_filtered", "name_features", "value_filtered", "value_features").contains(colName))
+//          .map(colName => new Column(colName)): _*
+//        )
+//        attributeTFIDF.printSchema()
+//        attributeTFIDF.take(10).foreach(x => print(x))
+
 //        trainDF.take(20).foreach(x => print(x))
 //        descDF.take(20).foreach(x => print(x))
 //        attrDF.take(20).foreach(x => print(x))
 //
+//        not useful
 //        trainDF.createOrReplaceTempView("train_desc")
 //        descDF.createOrReplaceTempView("desc_desc")
 //        attrDF.createOrReplaceTempView("attr_desc")
@@ -99,5 +198,27 @@ object main {
 //
 //        trainWithDescAndAttrDF.take(50).foreach(x => print(x))
     }
+
+
+//  ----------------------------------ML PART-------------------------------------------------------
+
+    //TODO In each one search term and title. Then combined with description and attributes (not so sure)
+    //TODO 5)LR with TFIDF
+    //TODO 6)LR with WORD2VEC
+    //TODO 7)LR with both above methods
+    //TODO 8)Add cosine similarities???
+    //TODO 9)DT with TFIDF
+    //TODO 10)DT with WORD2VEC
+    //TODO 11)DT with both above methods
+    //TODO 12)Add cosine similarities???
+    //TODO 13)RF with TFIDF
+    //TODO 14)RF with WORD2VEC
+    //TODO 15)RF with both above methods
+    //TODO 16)Add cosine similarities???
+    //TODO 17)LR with TFIDF
+    //TODO 18)LR with WORD2VEC
+    //TODO 19)LR with both above methods
+    //TODO 20)Add cosine similarities???
+    //TODO 21)Unsupervised part!!!!
 
 }
