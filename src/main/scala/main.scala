@@ -167,24 +167,17 @@ object main {
           .map(colName => new Column(colName)): _*
         )
 
-        //TODO 4)Lemmatization to attribute data
+        // Stemming description data
+        val semiStemmedAttributeDF = stemmer.setInputCol("name_filtered").setOutputCol("name_stemmed").transform(finalAttributeDF)
+        val stemmedAttributeDF = stemmer.setInputCol("value_filtered").setOutputCol("value_stemmed").transform(semiStemmedAttributeDF)
 
         // TF-ing attribute data
-        hashingTF.setInputCol("name_filtered").setOutputCol("name_features").setNumFeatures(10000)
-        val semiFeaturesAttributeDF = hashingTF.transform(finalAttributeDF)
-        hashingTF.setInputCol("value_filtered").setOutputCol("value_features").setNumFeatures(10000)
+        hashingTF.setInputCol("name_stemmed").setOutputCol("name_features").setNumFeatures(10000)
+        val semiFeaturesAttributeDF = hashingTF.transform(stemmedAttributeDF)
+        hashingTF.setInputCol("value_stemmed").setOutputCol("value_features").setNumFeatures(10000)
         val featuresAttributeDF = hashingTF.transform(semiFeaturesAttributeDF)
 
-        //TODO 1)Make this shit work!!!
-
         // TF-IDF attribute data
-//        idf.setInputCol("name_features").setOutputCol("name")
-//        val semiAttributeIDFModel = idf.fit(featuresAttributeDF)
-//        val semiRescaledAttributeIDF = semiAttributeIDFModel.transform(featuresAttributeDF)
-//        idf.setInputCol("value_features").setOutputCol("value")
-//        val attributeIDFModel = idf.fit(semiRescaledAttributeIDF)
-//        val rescaledAttributeDF = attributeIDFModel.transform(semiRescaledAttributeIDF)
-
         idf.setInputCol("name_features").setOutputCol("name")
         val semiAttributeIDFModel = idf.fit(featuresAttributeDF)
         val semiRescaledAttributeDF = semiAttributeIDFModel.transform(featuresAttributeDF)
@@ -192,11 +185,21 @@ object main {
         val attributeIDFModel = idf.fit(semiRescaledAttributeDF)
         val rescaledAttributeDF = attributeIDFModel.transform(semiRescaledAttributeDF)
         val attributeTFIDF = rescaledAttributeDF.select(rescaledAttributeDF.columns
-          .filter(colName => !Seq("name_filtered", "name_features", "value_filtered", "value_features").contains(colName))
+          .filter(colName => !Seq("name_filtered", "name_features", "name_stemmed", "value_filtered", "value_features", "value_stemmed").contains(colName))
           .map(colName => new Column(colName)): _*
         )
         attributeTFIDF.printSchema()
         attributeTFIDF.take(10).foreach(x => print(x))
+
+        // Word2Vec to attribute data
+        word2Vec.setInputCol("name_stemmed").setOutputCol("name")
+        val semiAttrVecModel = word2Vec.fit(stemmedAttributeDF)
+        val semiVecAttrDF = semiAttrVecModel.transform(stemmedAttributeDF)
+        word2Vec.setInputCol("value_stemmed").setOutputCol("value")
+        val attrVecModel = word2Vec.fit(semiVecAttrDF)
+        val vecAttrDF = attrVecModel.transform(semiVecAttrDF).select("product_uid", "name", "value")
+        vecAttrDF.printSchema()
+        vecAttrDF.take(10).foreach(x => print(x))
 
 //        trainDF.take(20).foreach(x => print(x))
 //        descDF.take(20).foreach(x => print(x))
