@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0669768-50a8-4cde-a3c1-556615e33aa2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1-javadoc.jar.checked" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1-javadoc.jar__md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1-javadoc.jar__sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1-sources.jar.checked" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1-sources.jar__md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1-sources.jar__sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1.jar.checked" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1.jar__md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1.jar__sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1.pom.checked" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1.pom__md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/.cosine-lsh-join-spark_2.10-1.0.1.pom__sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/cosine-lsh-join-spark_2.10-1.0.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/cosine-lsh-join-spark_2.10-1.0.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/cosine-lsh-join-spark_2.10-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/soundcloud/cosine-lsh-join-spark_2.10/1.0.1/cosine-lsh-join-spark_2.10-1.0.1.pom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +163,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3157750947171" />
+        <entry key="$PROJECT_DIR$" value="3157918076483" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3109544094" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
       </map>
@@ -194,7 +211,10 @@
       <workItem from="1579168824398" duration="3080000" />
       <workItem from="1579186141633" duration="2158000" />
       <workItem from="1579199037887" duration="9952000" />
-      <workItem from="1579264154641" duration="2881000" />
+      <workItem from="1579264154641" duration="4607000" />
+      <workItem from="1579290195675" duration="10601000" />
+      <workItem from="1579334944487" duration="24770000" />
+      <workItem from="1579427173986" duration="7435000" />
     </task>
     <task id="LOCAL-00001" summary="data ignored">
       <created>1576712499506</created>
@@ -231,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579216349428</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Word2vec in attributes">
+      <created>1579267482547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579267482547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +283,8 @@
     <MESSAGE value="Tokenization added" />
     <MESSAGE value="Stopword removal added" />
     <MESSAGE value="Word2vec, fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Word2vec, fixed bugs" />
+    <MESSAGE value="Word2vec in attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Word2vec in attributes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579099170228">
@@ -277,57 +305,57 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="191" key="#main_2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579101892688" />
-    <state x="547" y="137" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1579216345175">
+    <state x="547" y="137" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1579267481367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-166" y="64" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356316666" />
     <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776838230" />
-    <state x="547" y="137" key="CommitChangelistDialog2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579216345175" />
-    <state width="1877" height="312" key="GridCell.Tab.0.bottom" timestamp="1579266475350">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="547" y="137" key="CommitChangelistDialog2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579267481367" />
+    <state width="981" height="312" key="GridCell.Tab.0.bottom" timestamp="1579451828893">
+      <screen x="1920" y="137" width="1024" height="728" />
     </state>
     <state width="1874" height="303" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094554" />
     <state width="978" height="174" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="312" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579266475350" />
-    <state width="981" height="266" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578655854681" />
-    <state width="1877" height="312" key="GridCell.Tab.0.center" timestamp="1579266475349">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="312" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579451138591" />
+    <state width="981" height="312" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451828893" />
+    <state width="981" height="312" key="GridCell.Tab.0.center" timestamp="1579451828893">
+      <screen x="1920" y="137" width="1024" height="728" />
     </state>
     <state width="1874" height="303" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094554" />
     <state width="978" height="174" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="312" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579266475349" />
-    <state width="981" height="266" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578655854680" />
-    <state width="1877" height="312" key="GridCell.Tab.0.left" timestamp="1579266475349">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="312" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579451138591" />
+    <state width="981" height="312" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451828893" />
+    <state width="981" height="312" key="GridCell.Tab.0.left" timestamp="1579451828893">
+      <screen x="1920" y="137" width="1024" height="728" />
     </state>
     <state width="1874" height="303" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094553" />
     <state width="978" height="174" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="312" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579266475349" />
-    <state width="981" height="266" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578655854680" />
-    <state width="1877" height="312" key="GridCell.Tab.0.right" timestamp="1579266475350">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="312" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579451138591" />
+    <state width="981" height="312" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451828893" />
+    <state width="981" height="312" key="GridCell.Tab.0.right" timestamp="1579451828893">
+      <screen x="1920" y="137" width="1024" height="728" />
     </state>
     <state width="1874" height="303" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094554" />
     <state width="978" height="174" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="312" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579266475350" />
-    <state width="981" height="266" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578655854680" />
+    <state width="1877" height="312" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579451138591" />
+    <state width="981" height="312" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451828893" />
     <state x="752" y="228" width="916" height="708" key="SettingsEditor" timestamp="1579168150358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="906" y="112" width="1014" height="741" key="SettingsEditor/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578337736655" />
     <state x="752" y="228" key="SettingsEditor/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579168150358" />
     <state x="2028" y="157" width="916" height="708" key="SettingsEditor/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578654988283" />
-    <state x="201" y="179" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579216367657">
+    <state x="201" y="179" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579267488085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776841315" />
-    <state x="201" y="179" key="Vcs.Push.Dialog.v2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579216367657" />
-    <state x="315" y="303" key="com.intellij.ide.util.TipDialog" timestamp="1579264427981">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="201" y="179" key="Vcs.Push.Dialog.v2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579267488085" />
+    <state x="2088" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1579451917500">
+      <screen x="1920" y="137" width="1024" height="728" />
     </state>
     <state x="2088" y="224" key="com.intellij.ide.util.TipDialog/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578346430324" />
-    <state x="315" y="303" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579264427981" />
-    <state x="2088" y="349" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578840226487" />
+    <state x="315" y="303" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579427173855" />
+    <state x="2088" y="349" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451917500" />
     <state x="2200" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578330148227">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
