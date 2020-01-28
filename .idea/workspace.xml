@@ -1,11 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0669768-50a8-4cde-a3c1-556615e33aa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/pasca.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/MyUtilities.scala" afterDir="false" />
+    <list default="true" id="e0669768-50a8-4cde-a3c1-556615e33aa2" name="Default Changelist" comment="M=Parquet and ML">
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00000-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00001-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00002-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00003-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00004-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00005-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00006-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00007-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00008-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00009-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00010-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00011-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00012-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00013-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00014-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00015-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00016-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00017-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00018-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00019-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00020-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00021-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00022-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00023-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00024-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00025-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00026-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00027-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00028-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00029-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00030-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00031-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00032-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00033-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00034-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00035-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00036-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00037-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00038-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00039-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00040-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00041-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00042-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00043-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00044-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00045-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00046-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00047-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00048-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00049-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00050-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00051-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00052-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00053-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00054-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00055-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00056-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00057-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00058-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00059-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00060-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00061-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00062-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00063-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00064-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00065-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00066-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00067-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00068-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00069-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00070-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00071-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00072-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00073-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00074-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00075-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00076-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00077-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00078-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00079-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00080-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00081-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00082-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00083-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00084-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00085-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00086-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00087-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00088-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00089-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00090-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00091-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00092-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00093-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00094-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00095-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00096-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00097-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00098-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00099-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00100-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00101-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00102-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00103-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00104-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00105-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00106-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00107-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00108-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00109-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00110-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00111-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00112-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00113-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00114-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00115-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00116-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00117-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00118-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00119-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00120-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00121-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00122-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00123-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00124-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00125-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00126-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00127-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00128-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00129-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00130-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00131-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00132-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00133-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00134-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00135-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00136-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00137-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00138-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00139-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00140-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00141-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00142-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00143-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00144-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00145-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00146-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00147-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00148-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00149-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00150-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00151-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00152-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00153-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00154-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00155-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00156-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00157-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00158-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00159-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00160-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00161-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00162-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00163-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00164-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00165-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00166-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00167-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00168-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00169-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00170-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00171-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00172-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00173-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00174-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00175-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00176-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00177-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00178-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00179-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00180-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00181-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00182-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00183-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00184-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00185-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00186-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00187-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00188-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00189-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00190-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00191-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00192-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00193-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00194-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00195-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00196-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00197-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00198-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/.part-00199-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00000-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00001-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00002-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00003-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00004-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00005-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00006-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00007-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00008-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00009-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00010-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00011-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00012-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00013-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00014-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00015-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00016-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00017-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00018-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00019-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00020-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00021-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00022-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00023-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00024-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00025-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00026-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00027-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00028-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00029-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00030-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00031-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00032-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00033-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00034-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00035-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00036-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00037-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00038-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00039-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00040-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00041-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00042-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00043-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00044-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00045-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00046-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00047-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00048-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00049-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00050-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00051-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00052-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00053-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00054-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00055-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00056-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00057-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00058-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00059-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00060-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00061-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00062-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00063-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00064-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00065-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00066-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00067-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00068-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00069-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00070-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00071-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00072-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00073-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00074-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00075-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00076-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00077-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00078-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00079-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00080-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00081-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00082-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00083-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00084-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00085-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00086-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00087-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00088-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00089-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00090-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00091-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00092-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00093-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00094-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00095-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00096-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00097-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00098-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00099-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00100-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00101-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00102-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00103-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00104-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00105-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00106-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00107-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00108-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00109-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00110-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00111-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00112-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00113-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00114-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00115-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00116-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00117-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00118-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00119-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00120-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00121-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00122-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00123-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00124-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00125-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00126-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00127-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00128-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00129-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00130-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00131-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00132-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00133-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00134-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00135-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00136-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00137-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00138-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00139-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00140-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00141-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00142-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00143-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00144-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00145-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00146-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00147-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00148-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00150-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00151-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finaldf.parquet/part-00152-35e1593c-85aa-4eb6-9a20-a8c581656f26-c000.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pasca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/pasca.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MyUtilities.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MyUtilities.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +422,13 @@
       </set>
     </option>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -102,6 +461,7 @@
   </component>
   <component name="RunManager" selected="Application.main">
     <configuration name="main" type="Application" factoryName="Application" temporary="true">
+      <log_file alias="C:\Users\pasca\Desktop\Log.txt" path="$PROJECT_DIR$/../../../Log.txt" />
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="RelevanceCalculation" />
       <method v="2">
@@ -115,6 +475,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.main_2" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
@@ -204,7 +568,14 @@
       <workItem from="1579451914509" duration="146000" />
       <workItem from="1579459207193" duration="24851000" />
       <workItem from="1579507839550" duration="2516000" />
-      <workItem from="1579614475562" duration="9477000" />
+      <workItem from="1579614475562" duration="9806000" />
+      <workItem from="1579682242688" duration="37452000" />
+      <workItem from="1579771581555" duration="2534000" />
+      <workItem from="1579804200948" duration="9688000" />
+      <workItem from="1579863598316" duration="9603000" />
+      <workItem from="1579887169014" duration="11214000" />
+      <workItem from="1579978181621" duration="9540000" />
+      <workItem from="1580046131041" duration="3571000" />
     </task>
     <task id="LOCAL-00001" summary="data ignored">
       <created>1576712499506</created>
@@ -255,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579451992779</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="M=Parquet and ML">
+      <created>1579632689419</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579632689419</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,13 +660,22 @@
     <MESSAGE value="Word2vec, fixed bugs" />
     <MESSAGE value="Word2vec in attributes" />
     <MESSAGE value="Code reformat, LR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code reformat, LR" />
+    <MESSAGE value="M=Parquet and ML" />
+    <option name="LAST_COMMIT_MESSAGE" value="M=Parquet and ML" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579462884682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579462884682" />
+    <state x="479" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579990453135">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1579990453135" />
+    <state x="610" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579990675422">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="610" y="360" key="#com.intellij.fileTypes.FileTypeChooser/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1579990675422" />
     <state x="2035" y="66" width="784" height="661" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1578346491196">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
@@ -303,62 +690,101 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="191" key="#main_2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579101892688" />
-    <state x="2212" y="233" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1579451990487">
-      <screen x="1920" y="137" width="1024" height="728" />
+    <state x="547" y="137" width="1014" height="741" key="CommitChangelistDialog2" timestamp="1579728925688">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="292" y="96" key="CommitChangelistDialog2/0.0.1024.728@0.0.1024.728" timestamp="1579684590272" />
     <state x="-166" y="64" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356316666" />
     <state x="1920" y="27" width="1014" height="741" key="CommitChangelistDialog2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776838230" />
-    <state x="547" y="137" key="CommitChangelistDialog2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579267481367" />
+    <state x="547" y="137" key="CommitChangelistDialog2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579728925688" />
     <state x="2212" y="233" key="CommitChangelistDialog2/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451990487" />
-    <state width="1877" height="322" key="GridCell.Tab.0.bottom" timestamp="1579631137264">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="804" y="312" key="FileChooserDialogImpl" timestamp="1579990426832">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state x="804" y="312" key="FileChooserDialogImpl/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1579990426832" />
+    <state width="2005" height="274" key="GridCell.Tab.0.bottom" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="981" height="205" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1579684596736" />
     <state width="1874" height="303" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094554" />
     <state width="978" height="174" key="GridCell.Tab.0.bottom/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="322" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579631137264" />
-    <state width="981" height="334" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579483874670" />
-    <state width="1877" height="322" key="GridCell.Tab.0.center" timestamp="1579631137264">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="172" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579741226798" />
+    <state width="981" height="205" key="GridCell.Tab.0.bottom/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579694650609" />
+    <state width="2005" height="274" key="GridCell.Tab.0.bottom/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.0.center" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="981" height="205" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1579684596736" />
     <state width="1874" height="303" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094554" />
     <state width="978" height="174" key="GridCell.Tab.0.center/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="322" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579631137264" />
-    <state width="981" height="334" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579483874670" />
-    <state width="1877" height="322" key="GridCell.Tab.0.left" timestamp="1579631137264">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="172" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579741226798" />
+    <state width="981" height="205" key="GridCell.Tab.0.center/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579694650608" />
+    <state width="2005" height="274" key="GridCell.Tab.0.center/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.0.left" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="981" height="205" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1579684596736" />
     <state width="1874" height="303" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094553" />
     <state width="978" height="174" key="GridCell.Tab.0.left/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="322" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579631137264" />
-    <state width="981" height="334" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579483874669" />
-    <state width="1877" height="322" key="GridCell.Tab.0.right" timestamp="1579631137264">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="172" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579741226797" />
+    <state width="981" height="205" key="GridCell.Tab.0.left/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579694650608" />
+    <state width="2005" height="274" key="GridCell.Tab.0.left/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.0.right" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state width="981" height="205" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1579684596736" />
     <state width="1874" height="303" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@0.27.1920.1053" timestamp="1578356094554" />
     <state width="978" height="174" key="GridCell.Tab.0.right/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578348622845" />
-    <state width="1877" height="322" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579631137264" />
-    <state width="981" height="334" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579483874670" />
+    <state width="1877" height="172" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579741226798" />
+    <state width="981" height="205" key="GridCell.Tab.0.right/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579694650608" />
+    <state width="2005" height="274" key="GridCell.Tab.0.right/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.1.bottom" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="274" key="GridCell.Tab.1.bottom/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.1.center" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="274" key="GridCell.Tab.1.center/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.1.left" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="274" key="GridCell.Tab.1.left/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
+    <state width="2005" height="274" key="GridCell.Tab.1.right" timestamp="1580000269233">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="274" key="GridCell.Tab.1.right/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580000269233" />
     <state x="752" y="228" width="916" height="708" key="SettingsEditor" timestamp="1579168150358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="906" y="112" width="1014" height="741" key="SettingsEditor/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578337736655" />
     <state x="752" y="228" key="SettingsEditor/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579168150358" />
     <state x="2028" y="157" width="916" height="708" key="SettingsEditor/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1578654988283" />
-    <state x="2027" y="262" width="487" height="370" key="Vcs.Push.Dialog.v2" timestamp="1579451994586">
-      <screen x="1920" y="137" width="1024" height="728" />
-    </state>
-    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776841315" />
-    <state x="201" y="179" key="Vcs.Push.Dialog.v2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579267488085" />
-    <state x="2027" y="262" width="487" height="370" key="Vcs.Push.Dialog.v2/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451994586" />
-    <state x="315" y="303" key="com.intellij.ide.util.TipDialog" timestamp="1579619715243">
+    <state x="201" y="179" width="487" height="370" key="Vcs.Push.Dialog.v2" timestamp="1579632691794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="2027" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1576776841315" />
+    <state x="201" y="179" key="Vcs.Push.Dialog.v2/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579632691794" />
+    <state x="2027" y="262" width="487" height="370" key="Vcs.Push.Dialog.v2/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579451994586" />
+    <state x="336" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1580241531098">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="168" y="212" key="com.intellij.ide.util.TipDialog/0.0.1024.728@0.0.1024.728" timestamp="1579684454120" />
     <state x="2088" y="224" key="com.intellij.ide.util.TipDialog/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578346430324" />
-    <state x="315" y="303" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579619715243" />
+    <state x="315" y="303" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579771584838" />
     <state x="2088" y="349" key="com.intellij.ide.util.TipDialog/1920.137.1024.728/0.0.1920.1040@1920.137.1024.728" timestamp="1579459226616" />
+    <state x="336" y="324" key="com.intellij.ide.util.TipDialog/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1580241531098" />
+    <state x="662" y="276" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1579632637132">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="276" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/1920.137.1024.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579632637132" />
     <state x="2200" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578330148227">
       <screen x="1920" y="0" width="1024" height="768" />
     </state>
     <state x="2200" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1024.768/0.27.1920.1053@1920.0.1024.768" timestamp="1578330148227" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1579904740148">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/2560.137.1024.718/0.0.2048.1112@0.0.2048.1112" timestamp="1579904740148" />
   </component>
 </project>

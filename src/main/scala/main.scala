@@ -1,12 +1,15 @@
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkContext
-import org.apache.spark.ml.evaluation.RegressionEvaluator
+import org.apache.spark.ml.clustering.{BisectingKMeans, GaussianMixture, KMeans, LDA}
+import org.apache.spark.ml.evaluation.{BinaryClassificationEvaluator, ClusteringEvaluator, MulticlassClassificationEvaluator, RegressionEvaluator}
 import org.apache.spark.ml.feature.{HashingTF, IDF, StopWordsRemover, Tokenizer, VectorAssembler, Word2Vec}
-import org.apache.spark.ml.linalg.{SparseVector, Vector}
+import org.apache.spark.ml.linalg.{Matrices, Matrix, SparseVector, Vector}
 import org.apache.spark.ml.regression.{DecisionTreeRegressor, GBTRegressor, IsotonicRegression, LinearRegression, RandomForestRegressor}
+import org.apache.spark.ml.tuning.{CrossValidator, ParamGridBuilder}
 import org.apache.spark.mllib.feature.Stemmer
 import org.apache.spark.sql.{DataFrame, SQLContext, SparkSession}
 import org.apache.spark.sql.functions.{col, collect_set, concat, concat_ws, lit, udf}
+import org.apache.spark.sql.types.DoubleType
 
 import scala.collection.mutable
 
@@ -42,6 +45,7 @@ object main {
 //        val replaceNull = udf[mutable.WrappedArray[String], mutable.WrappedArray[String]](MyUtilities.replaceNull)
 //        val commonWords = udf[Int, mutable.WrappedArray[String], mutable.WrappedArray[String]](MyUtilities.commonWords)
 //        val queryLength = udf[Int, mutable.WrappedArray[String]](MyUtilities.queryLength)
+        val toDual = udf[Int, Double](MyUtilities.convertForCluster)
 //
 //        //      -----------------------------Training Data Preprocess-----------------------------------------------
 //        // Tokenizing the training data
@@ -196,95 +200,166 @@ object main {
         println(finalDF.count())
 
         //-----------------------------------------Test Area 51-----------------------------------------
-
-        val assembler = new VectorAssembler()
-          .setInputCols(Array("cos_title_t", "cos_desc_t", "cos_attr_t", "cos_title_w", "cos_desc_w", "cos_attr_w",
-              "jacc_title", "jacc_desc", "jacc_attr", "comm_title", "comm_desc", "comm_attr", "query_length",
-              "title_ratio", "desc_ratio", "attr_ratio"))
-          .setOutputCol("features")
-        // Transform the DataFrame
-        val output = assembler.transform(finalDF)
-        println(output.count())
-
-        // Splitting the data by create an array of the training and test data
-        val Array(training, test) = output.select("label","features").
-          randomSplit(Array(0.6, 0.4), seed = 12345)//, seed = 1L
-        println(training.count())
-        println(test.count())
-
-        // Linear Regression model
-//        val lir = new LinearRegression()
-//          .setFeaturesCol("features")
-//          .setLabelCol("label")
-//          .setMaxIter(300)
-//          .setSolver("l-bfgs")
-//          .setRegParam(0.001)
-
-        // You can then treat this object as the model and use fit on it.
-//        val lirModel = lir.fit(training)
-//        val result = lirModel.transform(test)
-//        println(result.count())
-
-        // Decision Tree model
-//        val dt = new DecisionTreeRegressor()
-//          .setFeaturesCol("features")
-//          .setLabelCol("label")
-//          .setMaxDepth(5)
+        for(i <- 1 to 25) {//2, 3, 5, 6, 7, 10, 13, 16, 17, 20, 21, 22
+//            println(i)
+//            val assembler = new VectorAssembler()
+//              .setInputCols(MyUtilities.testArray(i))
+//              .setOutputCol("features")
+//            // Transform the DataFrame
+//            val output = assembler.transform(finalDF)
+//            println(output.count())
 //
-//        val dtModel = dt.fit(training)
-//        val result = dtModel.transform(test)
+//            // Splitting the data by create an array of the training and test data
+//            val Array(training, test) = output.select("label", "features").
+//              randomSplit(Array(0.6, 0.4), seed = 12345) //, seed = 1L
+//            println(training.count())
+//            println(test.count())
 
-        // Random Forrest model
-//        val rf = new RandomForestRegressor()
-//          .setFeaturesCol("features")
-//          .setLabelCol("label")
-//          .setMaxDepth(10)
-//          .setNumTrees(100)
+            // Linear Regression model
+//            val lr = new LinearRegression()
+//              .setFeaturesCol("features")
+//              .setLabelCol("label")
+//              .setSolver("l-bfgs")
+//              .setRegParam(0.1)
 //
-//        val rfModel = rf.fit(training)
-//        val result = rfModel.transform(test)
-
-        // Gradient Boost model
-//        val gbt = new GBTRegressor()
-//          .setFeaturesCol("features")
-//          .setLabelCol("label")
-        //  .setMaxIter(100)
 //
-//        val gbtModel = gbt.fit(training)
-//        val result = gbtModel.transform(test)
+//            val lirModel = lr.fit(training)
+//            val result = lirModel.transform(test)
 
-        // Isotonic Regression model
-        val ir = new IsotonicRegression()
-          .setFeaturesCol("features")
-          .setLabelCol("label")
+            // Decision Tree model
+//            val dt = new DecisionTreeRegressor()
+//              .setFeaturesCol("features")
+//              .setLabelCol("label")
+//              .setMaxDepth(5)
+//
+//            val dtModel = dt.fit(training)
+//            val result = dtModel.transform(test)
 
-        val irModel = ir.fit(training)
-        val result = irModel.transform(test)
+            //         Random Forrest model
+//            val rf = new RandomForestRegressor()
+//              .setFeaturesCol("features")
+//              .setLabelCol("label")
+//              .setMaxDepth(10)
+//
+//            val rfModel = rf.fit(training)
+//            val result = rfModel.transform(test)
 
-        //Creation of the evaluator
-        val evaluator = new RegressionEvaluator()
-          .setLabelCol("label")
-          .setPredictionCol("prediction")
-          .setMetricName("mse")
+            // Gradient Boost model
+//            val gbt = new GBTRegressor()
+//              .setFeaturesCol("features")
+//              .setLabelCol("label")
+////              .setMaxIter(100)
+//
+//            val gbtModel = gbt.fit(training)
+//            val result = gbtModel.transform(test)
 
-        val MSElr = evaluator.evaluate(result)
-        println("Linear Regression MSE = " + MSElr)
+            //Creation of the evaluator
+//            val evaluator = new RegressionEvaluator()
+//              .setLabelCol("label")
+//              .setPredictionCol("prediction")
+//              .setMetricName("mse")
+//
+//            println(result.count())
+//
+//            val MSElr = evaluator.evaluate(result)
+//            println("Linear Regression MSE = " + MSElr)
+        }
+
+        //-------------------------------- Test Area 52 ---------------------------------------------
+        val final2DF = finalDF.withColumn("relevance", toDual(col("label")).cast(DoubleType))
+//        final2DF.write.csv("outfile.csv")
+//        final2DF.select("label", "relevance", "cos_title_t", "cos_desc_t", "cos_attr_t"
+//            ,"cos_title_w", "cos_desc_w", "cos_attr_w"
+//            ,"jacc_title", "jacc_desc", "jacc_attr").write.csv("outfile.csv")
+
+        for (i <- 0 to 25) {
+            println(i)
+            val assembler = new VectorAssembler()
+              .setInputCols(MyUtilities.testArray(i))
+              .setOutputCol("features")
+
+            val dataset = assembler.transform(final2DF)
+            println(dataset.count())
+
+//             K-Means model
+            val km = new KMeans().setFeaturesCol("features").setK(2) //.setSeed(1L)
+              //.setMaxIter(20)
+            val model = km.fit(dataset)
+            model.clusterCenters.foreach(println)
+
+            val predictions = model.transform(dataset)
+
+            // BKM model
+//            val bkm = new BisectingKMeans().setK(2).setSeed(1)
+//            val model = bkm.fit(dataset)
+//            val predictions = model.transform(dataset)
+
+    //        predictions.select("prediction", "relevance").show(false)
+    //        println("Cluster Centers: ")
+    //        model.clusterCenters.foreach(println)
+    //
+    //        val evaluator = new ClusteringEvaluator()
+    //        val silhouette = evaluator.evaluate(predictions)
+    //
+    //        println(s"Silhouette with squared euclidean distance = $silhouette")
+
+            // Evaluation
+
+//            val predictions_double = predictions.withColumn("prediction_d", col("prediction").cast(DoubleType))
+//
+//            val TN: Double = predictions.select("relevance", "prediction").filter("relevance = 0 and prediction = 0").count
+//            val TP: Double = predictions.select("relevance", "prediction").filter("relevance = 1 and prediction = 1").count
+//            val FN: Double = predictions.select("relevance", "prediction").filter("relevance = 1 and prediction = 0").count
+//            val FP: Double = predictions.select("relevance", "prediction").filter("relevance = 0 and prediction = 1").count
+//            val total = predictions.select("relevance").count.toDouble
+//
+//            val confusion: Matrix = Matrices.dense(2, 2, Array(TP, FN, FP, TN))
+//
+//            val accuracy = (TP + TN) / total
+//            val precision = TP / (TP + FP)
+//            val recall = TP / (TP + FN)
+//            val F1 = 2 / (1 / precision + 1 / recall)
+//
+//            println(confusion)
+//            println("Accuracy: ", accuracy)
+//            println("Precision: ", precision)
+//            println("Recall: ", recall)
+//            println("F1: ", F1)
+//
+//            val evaluator = new MulticlassClassificationEvaluator()
+//              .setLabelCol("relevance")
+//              .setPredictionCol("prediction_d")
+//
+//            println("F1 of evaluator: ", evaluator.evaluate(predictions_double))
+
+        }
+
+        //----------------------------------- Thresholds ----------------------------------------------
+
+        val customPrediction = udf[Int, Double](MyUtilities.customPrediction)
+
+
+        val final4DF = final2DF.withColumn("prediction", customPrediction(col("title_ratio")))
+
+        val TN = final4DF.select("relevance", "prediction").filter("relevance = 0 and prediction = 0").count.toDouble
+        val TP = final4DF.select("relevance", "prediction").filter("relevance = 1 and prediction = 1").count.toDouble
+        val FN = final4DF.select("relevance", "prediction").filter("relevance = 1 and prediction = 0").count.toDouble
+        val FP = final4DF.select("relevance", "prediction").filter("relevance = 0 and prediction = 1").count.toDouble
+        val total = final4DF.select("relevance").count.toDouble
+
+        val confusion: Matrix = Matrices.dense(2, 2, Array(TP, FN, FP, TN))
+
+        val accuracy = (TP + TN) / total
+        val precision = TP / (TP + FP)
+        val recall = TP / (TP + FN)
+        val F1 = 2 / (1 / precision + 1 / recall)
+
+        println(confusion)
+        println("Accuracy: ", accuracy)
+        println("Precision: ", precision)
+        println("Recall: ", recall)
+        println("F1: ", F1)
+
     }
 
-
-//  ----------------------------------ML PART-------------------------------------------------------
-
-    //TODO 9)DT with TFIDF
-    //TODO 10)DT with WORD2VEC
-    //TODO 11)DT with both above methods
-    //TODO 12)Add cosine similarities???
-    //TODO 13)RF with TFIDF
-    //TODO 14)RF with WORD2VEC
-    //TODO 15)RF with both above methods
-    //TODO 16)Add cosine similarities???
-    //TODO 17)LR with TFIDF
-    //TODO 18)LR with WORD2VEC
-    //TODO 19)LR with both above methods
-    //TODO 20)Add cosine similarities???
-    //TODO 21)Unsupervised part!!!!
 }
